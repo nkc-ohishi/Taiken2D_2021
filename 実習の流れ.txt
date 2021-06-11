@@ -1,0 +1,42 @@
+00_Unityを起動してみよう
+　・デスクトップにある「Unity Hub」をダブルクリックして新規プロジェクトを作成
+　　テンプレート「２D」
+　　プロジェクト名「0618(今日の日付)」
+　　保存先「デスクトップ」
+　・「Taiken2D_2021.unitypackage」をプロジェクトウィンドウにD&Dでインポート
+　　
+01_完成版で遊んでみよう
+　・Assets - Scenes - Complete をダブルクリック　→　再生
+　・Enterキーでスタート
+　・カーソルキーで移動
+　・制限時間内にアイテムをすべて取ればクリアー
+
+02_背景を表示しよう
+　・Assets - Scenes - Taiken をダブルクリック
+　・Assets - Sprites - Backgroundをヒエラルキーにドラッグ＆ドロップ
+　　設定
+　　Sorting Layer:Background
+　　BoxCollider2D_01:左 Offset(-14.3, 0) Size(3.3, 31.64)
+　　BoxCollider2D_02:右 Offset( 14.3, 0) Size(3.3, 31.64)
+　　BoxCollider2D_03:上 Offset(0,  14.3) Size(31.64, 3.3)
+　　BoxCollider2D_04:下 Offset(0, -14.3) Size(31.64, 3.3)
+　　
+03_プレーヤーを作ろう
+　・Assets - Sprites - Playerをヒエラルキーにドラッグ＆ドロップ
+　設定
+　　Sorting Layer:Player
+　　Rigidbody2D追加
+　　・
+　　Assets - Scripts - PlayerController.csをアタッチ
+
+	// ここに命令を追加↓以下を追加
+　　rb2d.AddForce(moveVec * speed);
+
+　　
+
+04_当たり判定を作ろう
+05_アイテムをつくろう
+06_スコアを表示しよう
+07_終了条件を追加しよう
+08_タイトル画面を作ろう
+
